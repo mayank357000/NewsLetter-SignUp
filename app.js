@@ -57,7 +57,4 @@ app.post("/", function(req, res) {
   }
   run().catch(e => res.sendFile(__dirname + "/failure.html"));
 });
-// api key
-// bc0419d89d4cd2a579f78e53e50bca0c-us1
-// link id
-// abb54da544
+
