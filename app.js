@@ -23,7 +23,7 @@ app.listen(process.env.PORT||3000, function() {
 
 
 mailchimp.setConfig({
-  apiKey: "bc0419d89d4cd2a579f78e53e50bca0c-us1",
+  apiKey: "********************************",//put a api key from mailchimp here
   server: "us1"
 });
 
@@ -31,7 +31,7 @@ app.post("/", function(req, res) {
   const firstName = req.body.FirstName;
   const lastName = req.body.LastName;
   const email = req.body.Email;
-  const listId = "abb54da544";
+  const listId = "**********";//mailchimp account will give you a list id to use it here
   console.log(firstName, lastName, email);
   const subscribingUser = {
     firstName: firstName,
